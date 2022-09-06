@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Rubik&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    font-family: 'Rubik', 'Nunito' sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url('./assets/pexels-anni-roenkae-2860807.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+    border-radius: 15px;
+    width: 600px;
+    height: 630px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(42, 126, 211, 0.456);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.sub-container {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description {
+    font-size: 18px;
+}
+
+.weather {
+    /* border: 1px solid; */
+    width: 110px;
+    height: 110px;
+    align-self: center;
+    display: flex;
+}
+
+.weather img {
+    width: 110px;
+}
+
+.data-container {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 200px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 89, 255, 1);
+    background-color: rgba(0, 89, 255, 0.471);
+    transition: all ease 100ms;
+    box-shadow: 0px 5px 0 rgb(20, 52, 90) 
+    
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgba(255, 228, 196, 0.866);
+    opacity: 0.95;
+}
+
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0 rgb(20, 52, 90)
+}
+
+p {
+    /* border: 1px solid; */
+    margin-top: 5px;
+    width: 100%;
+    height: 90px;
+    font-size: 25px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+p i{
+    font-size: 40px;
+}
+
+.clouds i{
+    color: rgb(234, 241, 249);
+}
+
+.humidity i {
+    color: rgb(2, 174, 253);
+}
+
+.wind i {
+    color: rgb(241, 248, 255);
+}
+
+.min-temp i{
+    color: rgb(54, 122, 231);
+}
+
+.max-temp i {
+    color: rgb(246, 0, 0);
+}
+
+.temp i {
+    color: rgb(0, 0, 0);
+}
+
+@media(max-width: 615px) {
+
+    .main-container {
+        width: 400px;
+        margin-top: 60px;
+    }
+
+    p {
+        justify-content: flex-start;
+    }
+
+    p i {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 375px) {
+    
+    .main-container {
+        width: 300px;
+        height: 587px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .time {
+        height: 300px;
+    }
+    p {
+        font-size: 16px;
+        height: 50px;
+    }
+
+    button {
+        margin-top: -50px;
+    }
+}
